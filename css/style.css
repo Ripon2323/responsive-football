@@ -51,9 +51,13 @@ header{
     margin-left: 102px;
     
 }
-.header-part-banner img{
+.header-part-banner img {
     width: 550px;
     height: 400px;
+}
+.header-part-banner:hover{
+    transform: rotate(360deg);
+    transition: transform 1s ease-in-out;
 }
 /* main part style sheet here */
 main{

@@ -1,6 +1,7 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 /* body style */
+
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;;
@@ -34,7 +35,7 @@ header{
     color: white;
 }
 .header-part-title{
-
+    
 }
 .header-part-button{
     background-color: #E02C6D;
@@ -48,6 +49,7 @@ header{
 }
 .header-part-banner{
     margin-left: 102px;
+    
 }
 .header-part-banner img{
     width: 550px;
@@ -196,7 +198,55 @@ p{
 }
 
 /* final match update style sheet ends here */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .footer-banner img{
     width: 480px;
     height: 110px;
+    
 }
+.footer-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3F1FF; 
+
+}
+.social-media .filled{
+    padding-left: 30px;
+    color: #969BAB;
+}
+
+/* responsive design */
+@media only screen and (max-width:688px) {
+     .container{
+        width: 100%;
+    } 
+    .player-blogs,.football-blog,.final-match,.header-part{
+        grid-template-columns: repeat(1,1fr); 
+        /* background-color: red; */
+    }
+    .player-blog,.blog-detail,.final-match-update,.header-part-detail{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width:668px) and (max-width:992px) {
+    .container{
+       width: 100%;
+   } 
+   .player-blogs,.football-blog,.final-match{
+       grid-template-columns: repeat(2,1fr); 
+       /* background-color: red; */
+   }
+   .player-blog,.blog-detail,.final-match-update{
+       flex-direction: column;
+   }
+}
+
+
